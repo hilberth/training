@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Local con JavaScript</title>
+    <title>Big Checkbox</title>
+    <style>
+        /* Scale the checkbox */
+        input[type="checkbox"] {
+            transform: scale(1.5);
+            -webkit-transform: scale(3); /* For Safari */
+            margin: 10px;
+        }
+
+        /* Alternatively, use zoom (not recommended for all cases) */
+        /*
+        input[type="checkbox"] {
+            zoom: 1.5;
+            margin: 10px;
+        }
+        */
+    </style>
 </head>
 <body>
-    <h1>Hola, iPhone!</h1>
-    <button onclick="mostrarAlerta()">Haz clic aquí</button>
 
-    <script>
-        function mostrarAlerta() {
-            alert("¡JavaScript está funcionando!");
-        }
-    </script>
+    <label>
+        <input type="checkbox"> Option 1
+    </label>
+    <label>
+        <input type="checkbox"> Option 2
+    </label>
+
 </body>
 </html>
